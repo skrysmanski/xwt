@@ -1,23 +1,23 @@
-﻿// 
+﻿//
 // WindowBackend.cs
-//  
+//
 // Author:
 //       Carlos Alberto Cortez <calberto.cortez@gmail.com>
 //       Luís Reis <luiscubal@gmail.com>
-// 
+//
 // Copyright (c) 2011 Carlos Alberto Cortez
 // Copyright (c) 2012 Luís Reis
-// 
+//
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
 // in the Software without restriction, including without limitation the rights
 // to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 // copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
-// 
+//
 // The above copyright notice and this permission notice shall be included in
 // all copies or substantial portions of the Software.
-// 
+//
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -76,7 +76,7 @@ namespace Xwt.WPFBackend
 			var grid = new Grid ();
 
 			grid.ColumnDefinitions.Add (new ColumnDefinition ());
-			
+
 			var menuRow = new RowDefinition () { Height = GridLength.Auto }; // Only take the menu requested space.
 			var contentRow = new RowDefinition (); // Take all the remaining space (default).
 
@@ -141,7 +141,7 @@ namespace Xwt.WPFBackend
 				mainMenuBackend.ParentWindow = null;
 				rootPanel.Children.Remove (mainMenu);
 			}
-		
+
 			if (menu == null) {
 				mainMenu = null;
 				mainMenuBackend = null;
