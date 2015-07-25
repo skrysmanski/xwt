@@ -301,8 +301,8 @@ namespace Xwt.WPFBackend
 			var top = p.Y - Top;
 			frameBorder = new WidgetSpacing (left, top, windowWidth - c.ActualWidth - left, windowHeight - c.ActualHeight - top);
 			borderCalculated = true;
-			Left = initialX;
-			Top = initialY;
+			Left = initialX - left;
+			Top = initialY - top;
 			SetMinSize (minSizeRequested);
 
 			// Border size calculation done and we can go back to Manual resize mode.
