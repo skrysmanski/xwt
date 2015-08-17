@@ -13,3 +13,4 @@ obj
 test-results
 packages
 packages.config
+_ReSharper.*
